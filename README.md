@@ -1,83 +1,58 @@
-# ASTOR — Enterprise Private Banking Intelligence Platform
+# ASTOR — Enterprise Private Banking Intelligence Copilot
 
-ASTOR is an enterprise-grade AI copilot designed for private banking, wealth advisory, and relationship management workflows.
+ASTOR is an enterprise-grade AI copilot designed for private banking and wealth management environments.  
+The platform leverages Retrieval-Augmented Generation (RAG), vector search, local LLM inference, and PII masking to assist relationship managers with intelligent financial advisory workflows.
 
-Built using Retrieval-Augmented Generation (RAG), ASTOR combines local LLMs, vector search, enterprise knowledge retrieval, and PII protection to simulate modern institutional banking intelligence systems.
-
-The platform enables Relationship Managers (RMs) and banking teams to interact with banking knowledge, client intelligence, lending policies, fraud controls, and wealth advisory workflows through natural language.
+This project simulates how AI copilots can support ultra-high-net-worth (UHNW) banking operations through contextual intelligence, advisory automation, risk-aware responses, and secure knowledge retrieval.
 
 ---
 
 # Overview
 
-ASTOR was built to explore how Generative AI can enhance enterprise banking operations through:
+ASTOR is built as an enterprise AI assistant capable of:
 
-- AI-assisted relationship management
-- Retrieval-Augmented Generation (RAG)
-- Wealth advisory intelligence
-- Enterprise document retrieval
-- Fraud and compliance support
-- Private banking workflows
-- Cross-border financial intelligence
-- PII-aware conversational AI
+- Wealth preservation advisory
+- Private banking intelligence
+- Relationship manager productivity support
+- Cross-border banking insights
+- Fraud and compliance intelligence
+- Multi-generational estate planning guidance
+- Premium banking recommendations
+- Secure document-grounded AI responses
 
-The project focuses on enterprise architecture patterns commonly used in modern AI copilots deployed within financial institutions.
+The system uses local LLM inference through Ollama combined with ChromaDB vector retrieval and LangChain orchestration.
 
 ---
 
 # Key Features
 
-## Enterprise Banking Intelligence
-
-- Wealth preservation advisory
-- UHNW/HNI client intelligence
-- Estate and legacy planning insights
-- Cross-border banking recommendations
-- Premium banking product recommendations
-
----
-
-## AI-Powered RAG Pipeline
-
-- Retrieval-Augmented Generation using LangChain
-- Semantic document search using ChromaDB
-- Banking policy and advisory retrieval
-- Context-aware response generation
+- Retrieval-Augmented Generation (RAG)
+- Enterprise AI Copilot Architecture
+- ChromaDB Vector Database
+- Phi-3 Local LLM Inference
+- PII Detection and Masking
+- Relationship Manager Advisory Workflows
+- Wealth Management Intelligence
+- Private Banking Use Cases
+- Context-Aware AI Responses
+- Streamlit Enterprise UI
+- Local-First AI Deployment
+- Multi-Document Financial Knowledge Retrieval
 
 ---
 
-## Security & Compliance
+# Technology Stack
 
-- PII detection and anonymization using Microsoft Presidio
-- Secure local inference using Ollama
-- No external LLM API dependency
-- Enterprise-style privacy-aware workflow
-
----
-
-## Conversational RM Workspace
-
-- GPT-style banking workspace UI
-- Natural language banking interactions
-- Relationship manager productivity assistant
-- Institutional AI copilot experience
-
----
-
-## Multi-Currency Intelligence
-
-Supports intelligent financial interpretation for:
-
-- INR
-- USD
-- GBP
-- EUR
-
-Examples:
-
-- 30 lakh rupees → ₹30,00,000
-- 3 million dollars → $3,000,000
-- 2 million pounds → £2,000,000
+| Layer | Technology |
+|---|---|
+| Frontend | Streamlit |
+| LLM Runtime | Ollama |
+| Language Model | Phi-3 |
+| Framework | LangChain |
+| Vector Database | ChromaDB |
+| Embeddings | Ollama Embeddings |
+| PII Security | Microsoft Presidio |
+| Programming Language | Python |
 
 ---
 
@@ -101,18 +76,92 @@ Enterprise Banking Response
 
 ---
 
-# Technology Stack
+# Workspace Preview
 
-| Layer | Technology |
-|---|---|
-| Frontend | Streamlit |
-| LLM Runtime | Ollama |
-| Language Model | Phi-3 |
-| Framework | LangChain |
-| Vector Database | ChromaDB |
-| Embedding Model | Granite Embeddings |
-| Security Layer | Microsoft Presidio |
-| Backend Language | Python |
+## ASTOR Banking Workspace
+
+<p align="center">
+  <img width="1845" height="692" alt="astor_workspace" src="https://github.com/user-attachments/assets/2198ab3c-356d-44f9-a4e7-74912ccb4d98" />
+</p>
+
+---
+
+# AI Advisory Demonstrations
+
+## Wealth Preservation Advisory Demo
+
+<p align="center">
+  <img width="1813" height="831" alt="wealth_preservation_demo_1" src="https://github.com/user-attachments/assets/a0312acb-8a29-4547-a23f-509cb7c82a7c" /> 
+</p>  
+<img width="1780" height="326" alt="wealth_preservation_demo_1 1" src="https://github.com/user-attachments/assets/46d8d4eb-1e44-4ec7-ae73-4c54c157763e" />
+
+</p>
+
+---
+
+## Premium Banking Intelligence Demo
+
+<p align="center">
+  <img width="1768" height="828" alt="premium_banking_demo" src="https://github.com/user-attachments/assets/e062b4b7-556d-4413-9cbc-71f555925f52" />
+</p>
+
+---
+
+## Relationship Manager Productivity Intelligence
+
+<p align="center">
+  <img width="1788" height="486" alt="relationship manager_productivity_ai_demo" src="https://github.com/user-attachments/assets/a944a8d4-2511-4e7a-9801-5c7b16947745" />
+
+</p>
+
+---
+
+## Multi-Generational Client Engagement Strategy
+
+<p align="center">
+  <img width="1867" height="773" alt="client_engagement_strategy_demo_1" src="https://github.com/user-attachments/assets/dee0a40d-7241-44ec-a443-90a6cb030861" />
+</p>
+<img width="1828" height="484" alt="client_engagement_strategy_demo_1 1" src="https://github.com/user-attachments/assets/50ee289d-c387-4020-8648-f670bb0d6e30" />
+
+
+</p>
+
+---
+
+## PII Detection & Security Layer
+
+<p align="center">
+ <img width="1799" height="747" alt="pii_security_demo" src="https://github.com/user-attachments/assets/e136e5f9-2945-4f74-8cb2-5ced5417ba8c" />
+
+</p>
+
+---
+
+# Enterprise Banking Use Cases
+
+## Wealth Management
+
+- Wealth preservation strategies
+- UHNW advisory workflows
+- Investment intelligence
+- Portfolio guidance
+- Cross-border banking insights
+
+## Relationship Management
+
+- Personalized client engagement
+- Multi-generational banking support
+- Advisory automation
+- Productivity enhancement
+- AI-assisted client servicing
+
+## Compliance & Security
+
+- PII masking
+- Secure AI responses
+- Risk-aware retrieval
+- Internal knowledge grounding
+- Controlled local inference
 
 ---
 
@@ -121,123 +170,43 @@ Enterprise Banking Response
 ```text
 banking-rag-copilot/
 │
+├── assets/
 ├── data/
 │   ├── loans.pdf
 │   ├── credit_cards.pdf
-│   ├── fraud_policy.pdf
 │   ├── wealth_management.pdf
+│   ├── fraud_policy.pdf
 │   ├── cards.json
 │   └── loan_criteria.json
 │
 ├── app.py
 ├── rag.py
 ├── pii.py
-├── agent.py
 ├── requirements.txt
-├── .gitignore
 └── README.md
-```
-
----
-
-# RAG Workflow
-
-## 1. Document Ingestion
-
-Enterprise banking documents are loaded from:
-
-- lending policies
-- fraud policies
-- wealth management documentation
-- premium banking product datasets
-
----
-
-## 2. Text Chunking
-
-Documents are split into semantic chunks using LangChain text splitters.
-
----
-
-## 3. Embedding Generation
-
-Chunks are converted into vector embeddings using Granite Embeddings.
-
----
-
-## 4. Vector Storage
-
-Embeddings are stored in ChromaDB for semantic similarity retrieval.
-
----
-
-## 5. Retrieval-Augmented Generation
-
-Relevant banking context is retrieved and injected into prompts before inference.
-
-This architecture improves:
-
-- factual grounding
-- domain accuracy
-- response relevance
-- hallucination reduction
-
----
-
-# Example Enterprise Queries
-
-## Wealth Advisory
-
-```text
-Recommend wealth preservation strategies for a UK-based UHNW client with £15 million in liquid assets and international investments.
-```
-
----
-
-## Lending Intelligence
-
-```text
-Analyze loan eligibility for a client earning ₹30 lakh annually with credit score 780.
-```
-
----
-
-## Fraud Intelligence
-
-```text
-Generate risk assessment summary for a high-value international transfer flagged for review.
-```
-
----
-
-## Premium Banking
-
-```text
-Compare premium international banking cards offering concierge services and global lounge access.
-```
-
----
-
-## Estate Planning
-
-```text
-Recommend estate planning services for a multi-generational family office client.
 ```
 
 ---
 
 # Installation
 
-## 1. Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/AnshulMane/banking-rag-copilot.git
+```
+
+---
+
+## Navigate to Project
+
+```bash
 cd banking-rag-copilot
 ```
 
 ---
 
-## 2. Create Virtual Environment
+## Create Virtual Environment
 
 ### Windows
 
@@ -245,13 +214,15 @@ cd banking-rag-copilot
 python -m venv myenv
 ```
 
+### Activate Environment
+
 ```bash
-.\myenv\Scripts\activate
+myenv\Scripts\activate
 ```
 
 ---
 
-## 3. Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -259,27 +230,23 @@ pip install -r requirements.txt
 
 ---
 
-## 4. Install Ollama
+# Install Ollama
 
-Download and install:
+Download Ollama:
 
 https://ollama.com
 
 ---
 
-## 5. Pull Required Models
+# Pull Phi-3 Model
 
 ```bash
 ollama pull phi3
 ```
 
-```bash
-ollama pull granite-embedding
-```
-
 ---
 
-## 6. Launch Application
+# Run Application
 
 ```bash
 streamlit run app.py
@@ -287,50 +254,37 @@ streamlit run app.py
 
 ---
 
-# Enterprise Design Goals
+# Security Architecture
 
-This project was designed to simulate AI-assisted workflows commonly explored in:
+ASTOR includes a dedicated PII detection and masking pipeline powered by Microsoft Presidio.
 
-- private banking
-- wealth management
-- institutional AI copilots
-- relationship management platforms
-- enterprise knowledge systems
+Sensitive information such as:
+- account numbers
+- phone numbers
+- emails
+- financial identifiers
 
-The focus was on:
+can be detected and masked before entering the LLM pipeline.
 
-- modular AI architecture
-- local LLM deployment
-- enterprise RAG pipelines
-- security-aware AI workflows
-- domain-specific retrieval systems
+This architecture enables safer enterprise AI deployment for regulated banking environments.
 
 ---
 
-# Why This Project Matters
+# Enterprise AI Design Principles
 
-Most AI chatbot projects stop at simple conversational interfaces.
+ASTOR is designed around enterprise AI engineering principles:
 
-ASTOR focuses on:
-
-- enterprise architecture
-- domain-specific RAG
-- institutional workflows
-- privacy-aware AI systems
-- real-world banking use cases
-
-This project demonstrates applied skills across:
-
-- Generative AI
-- Retrieval-Augmented Generation
-- AI system design
-- vector databases
-- enterprise AI workflows
-- local LLM deployment
-- security-aware AI engineering
+- Retrieval-grounded generation
+- Secure local inference
+- Explainable AI workflows
+- Data privacy awareness
+- Modular AI architecture
+- Scalable advisory pipelines
+- Human-in-the-loop banking support
 
 ---
 
 # Author
 
-## Anshul Mane
+Anshul Mane
+
