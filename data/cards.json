@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Premium Card",
+    "type": "HNI",
+    "annual_fee": 10000,
+    "benefits": ["Lounge Access", "Travel Insurance", "Concierge"]
+  },
+  {
+    "name": "Cashback Card",
+    "type": "Retail",
+    "annual_fee": 500,
+    "benefits": ["5% Cashback", "Fuel Rewards"]
+  }
+]

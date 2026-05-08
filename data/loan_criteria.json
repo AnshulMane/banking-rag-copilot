@@ -1,0 +1,12 @@
+[
+  {
+    "type": "Home Loan",
+    "min_income": 500000,
+    "min_credit_score": 700
+  },
+  {
+    "type": "Personal Loan",
+    "min_income": 300000,
+    "min_credit_score": 650
+  }
+]

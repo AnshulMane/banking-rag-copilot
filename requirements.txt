@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-chroma
+gradio
+presidio-analyzer
+presidio-anonymizer
+pypdf
