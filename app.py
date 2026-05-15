@@ -1,6 +1,8 @@
 import streamlit as st
+
 from rag import create_rag
 from pii import anonymize_text
+from agent import banking_ai
 
 # ==========================================
 # PAGE CONFIG
@@ -89,6 +91,7 @@ section[data-testid="stSidebar"] {
     border-radius: 12px;
     margin-bottom: 20px;
     border: 1px solid #1e3f75;
+    line-height: 1.7;
 }
 
 /* BUTTON */
@@ -178,12 +181,12 @@ with st.sidebar:
     st.markdown("## AI Advisory Modules")
 
     st.markdown("""
-    - Wealth Preservation Advisory
-    - Estate & Legacy Planning
-    - International Banking Insights
-    - Premium Credit Recommendations
-    - Fraud Intelligence
-    - Portfolio Risk Analysis
+    - Wealth Preservation Advisory  
+    - Estate & Legacy Planning  
+    - International Banking Insights  
+    - Premium Credit Recommendations  
+    - Fraud Intelligence  
+    - Portfolio Risk Analysis  
     """)
 
     st.markdown("---")
@@ -228,8 +231,6 @@ st.markdown("---")
 # CHAT HISTORY
 # ==========================================
 
-# st.markdown("## AI Banking Intelligence")
-
 for chat in reversed(st.session_state.messages):
 
     st.markdown(f"""
@@ -253,7 +254,7 @@ for chat in reversed(st.session_state.messages):
 user_input = st.text_area(
     "Relationship Manager Request",
     height=80,
-    placeholder="""Recommend wealth preservation strategy for a UK client with £5 million liquidity."""
+    placeholder="Recommend wealth preservation strategy for a UK client with £5 million liquidity."
 )
 
 # ==========================================
@@ -275,6 +276,7 @@ with col2:
         "Clear Workspace",
         use_container_width=True
     )
+
 # ==========================================
 # CLEAR CHAT
 # ==========================================
@@ -295,18 +297,51 @@ if ask_button and user_input:
 
         try:
 
+            # ======================================
+            # PII MASKING
+            # ======================================
+
             safe_query = anonymize_text(user_input)
 
-            response = qa.invoke(
+            # ======================================
+            # ENTERPRISE BANKING ANALYSIS
+            # ======================================
+
+            banking_analysis = banking_ai(safe_query)
+
+            # ======================================
+            # RAG KNOWLEDGE RETRIEVAL
+            # ======================================
+
+            rag_response = qa.invoke(
                 {"query": safe_query}
             )
 
-            result = response["result"]
+            rag_result = rag_response["result"]
+
+            # ======================================
+            # FINAL ENTERPRISE RESPONSE
+            # ======================================
+
+            final_response = f"""
+{banking_analysis}
+
+------------------------------------------------------------
+
+Enterprise Knowledge Response
+------------------------------------------------------------
+
+{rag_result}
+"""
+
+            # ======================================
+            # STORE CHAT HISTORY
+            # ======================================
 
             st.session_state.messages.append(
                 {
                     "user": user_input,
-                    "bot": result
+                    "bot": final_response
                 }
             )
 
@@ -323,10 +358,11 @@ Enterprise AI System Error
 {str(e)}
 
 Possible Causes:
-- Ollama not running
+- Ollama model not running
 - Phi3 model unavailable
-- GPU memory issue
-- Vector DB issue
+- ChromaDB issue
+- Vector database missing
+- Invalid enterprise query
 """
                 }
             )
@@ -340,5 +376,5 @@ Possible Causes:
 st.markdown("---")
 
 st.markdown("""
-Private Banking Intelligence Platform  
+Private Banking Intelligence Platform
 """)
