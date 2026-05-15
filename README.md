@@ -102,7 +102,10 @@ Enterprise Banking Response
 ## Premium Banking Intelligence Demo
 
 <p align="center">
-  <img width="1768" height="828" alt="premium_banking_demo" src="https://github.com/user-attachments/assets/e062b4b7-556d-4413-9cbc-71f555925f52" />
+  <img width="1802" height="110" alt="image" src="https://github.com/user-attachments/assets/32ef731e-c217-426c-8d21-09dd1887c0ab" />
+
+  <img width="1739" height="806" alt="image" src="https://github.com/user-attachments/assets/8226a805-937a-4263-b33b-831ad02f11e1" />
+
 </p>
 
 ---
@@ -119,9 +122,9 @@ Enterprise Banking Response
 ## Multi-Generational Client Engagement Strategy
 
 <p align="center">
-  <img width="1867" height="773" alt="client_engagement_strategy_demo_1" src="https://github.com/user-attachments/assets/dee0a40d-7241-44ec-a443-90a6cb030861" />
-</p>
-<img width="1828" height="484" alt="client_engagement_strategy_demo_1 1" src="https://github.com/user-attachments/assets/50ee289d-c387-4020-8648-f670bb0d6e30" />
+  <img width="1841" height="112" alt="image" src="https://github.com/user-attachments/assets/a95f7671-c29d-49db-a3e8-c59259d054f0" />
+  <img width="1767" height="793" alt="image" src="https://github.com/user-attachments/assets/508a01a9-a11a-45a6-86ef-026470cad480" />
+
 
 
 </p>
@@ -131,7 +134,9 @@ Enterprise Banking Response
 ## PII Detection & Security Layer
 
 <p align="center">
- <img width="1799" height="747" alt="pii_security_demo" src="https://github.com/user-attachments/assets/e136e5f9-2945-4f74-8cb2-5ced5417ba8c" />
+<img width="1799" height="110" alt="image" src="https://github.com/user-attachments/assets/4467f3b1-3ec4-479b-8a8d-c2fbae7ad820" />
+<img width="1761" height="579" alt="image" src="https://github.com/user-attachments/assets/1f95f4ab-de66-4ba8-b6c0-2e7ed4779a92" />
+
 
 </p>
 
