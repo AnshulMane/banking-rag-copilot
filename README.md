@@ -170,19 +170,20 @@ Enterprise Banking Response
 ```text
 banking-rag-copilot/
 │
-├── assets/
 ├── data/
-│   ├── loans.pdf
-│   ├── credit_cards.pdf
-│   ├── wealth_management.pdf
-│   ├── fraud_policy.pdf
-│   ├── cards.json
-│   └── loan_criteria.json
+│   ├── retail_loans_policy.pdf
+│   ├── premium_credit_cards.pdf
+│   ├── wealth_management_guidelines.pdf
+│   ├── fraud_and_compliance_policy.pdf
+│   ├── banking_cards.json
+│   └── loan_eligibility_criteria.json
 │
 ├── app.py
+├── agent.py
 ├── rag.py
 ├── pii.py
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
